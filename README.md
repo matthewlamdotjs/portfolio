@@ -1,1 +1,4 @@
 matthewlamdotjsportfolio
+---
+permalink: /index.html
+---

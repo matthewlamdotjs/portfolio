@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Matthew Lam Technical Portfolio</title>
+  <meta name="description" content="Crossjoin Analytics Dashboard">
+  <meta name="author" content="Matthew Lam">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <script>
+      const gotoproject = (url) => {
+          window.location.href = url
+      }
+  </script>
+  <style>
+      .ui.card{
+          cursor: pointer;
+          height: 300px !important;
+          margin: 0px 10px;
+          width: 250px !important;
+      }
+      .ui.card > .image{
+          background-color: white;
+          height: 150px;
+          overflow-y: hidden;
+      }
+      .image > img {
+          margin: auto;
+      }
+  </style>
+</head>
+
+<body>
+    <div class="ui container" style='padding-top: 200px !important;'>
+        <h1>Projects</h1><a href="/portfolio"><i class="arrow circle left icon"></i> back to homepage</a>
+        <br><br>
+        <br><br>
+        <div class="ui grid">
+            <div class="ui grid">
+                <!-- interval-trainer-js -->
+                <div class="ui card" onclick="gotoproject('https://github.com/matthewlamdotjs/interval-trainer-js')">
+                    <div class="image">
+                      <img src="images/interface-preview-1.png">
+                    </div>
+                    <div class="content">
+                      <a class="header">Interval Workout Trainer</a>
+                      <div class="meta">
+                        <span class="date">2021</span>
+                      </div>
+                      <div class="description">
+                        A tool for completing interval workouts.
+                      </div>
+                    </div>
+                </div>
+                <!-- tfidf -->
+                <div class="ui card" onclick="gotoproject('https://github.com/matthewlamdotjs/json-tf-idf')">
+                    <div class="image">
+                      <img src="images/tfidfproject.png">
+                    </div>
+                    <div class="content">
+                      <a class="header">Ranked Searching</a>
+                      <div class="meta">
+                        <span class="date">2020</span>
+                      </div>
+                      <div class="description">
+                        NPM package for performing ranked searches using tf-idf algorithm on an array of json objects.
+                      </div>
+                    </div>
+                </div>
+                <!-- crossjoin analytics -->
+                <div class="ui card" onclick="gotoproject('https://github.com/matthewlamdotjs/crossjoinanalytics')">
+                    <div class="image">
+                      <img src="images/hedgemasterlogo.png">
+                    </div>
+                    <div class="content">
+                      <a class="header">Hedge Master</a>
+                      <div class="meta">
+                        <span class="date">2020</span>
+                      </div>
+                      <div class="description">
+                        Stock volatility ranking tool. Project for Insight Data Science DE Fellowship 2020.
+                      </div>
+                    </div>
+                </div>
+                <!-- insta -->
+                <div class="ui card" onclick="gotoproject('https://github.com/matthewlamdotjs/instagram-download-chrome-extension')">
+                    <div class="image">
+                      <img src="images/InstagramDownload.png">
+                    </div>
+                    <div class="content">
+                      <a class="header">Instagram Download Chrome Extension</a>
+                      <div class="meta">
+                        <span class="date">2019</span>
+                      </div>
+                      <div class="description">
+                        Chrome extension for downloading post and stories from instagram.
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
